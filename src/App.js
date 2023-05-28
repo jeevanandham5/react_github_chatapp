@@ -2,8 +2,13 @@ import io from "socket.io-client";
 import "./App.css";
 import { useState } from "react";
 import Chat from "./components/Chat";
-
-const socket = io.connect("https://deploy-vercel-flax-ten.vercel.app/");
+//https://deploy-vercel-flax-ten.vercel.app/
+const socket = io("https://deploy-vercel-flax-ten.vercel.app/", {
+  withCredentials: true,
+  extraHeaders: {
+    "Access-Control-Allow-Origin": "https://jeevanandham5.github.io/",
+  },
+});
 
 function App() {
   const [username, setUserName] = useState("");

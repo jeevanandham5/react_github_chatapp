@@ -37,6 +37,7 @@ function Chat({ socket, username, room }) {
               <div
                 className="message"
                 id={username === messageContent.author ? "you" : "other"}
+                key={messageContent.room}
               >
                 <div>
                   <div className="message-content">
