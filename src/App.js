@@ -4,7 +4,7 @@ import { useState } from "react";
 import Chat from "./components/Chat";
 //https://deploy-vercel-flax-ten.vercel.app/
 
-const socket = io("https://deploy-vercel-flax-ten.vercel.app/", {
+const socket = io("https://deploy-vercel-jvg0bz07l-jeevanandham5.vercel.app", {
   withCredentials: true,
   transports: ["websocket"],
   secure: true,
