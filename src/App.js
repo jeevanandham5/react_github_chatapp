@@ -3,7 +3,7 @@ import "./App.css";
 import { useState } from "react";
 import Chat from "./components/Chat";
 
-const socket = io.connect("http://localhost:3001");
+const socket = io.connect("https://deploy-vercel-flax-ten.vercel.app/");
 
 function App() {
   const [username, setUserName] = useState("");
