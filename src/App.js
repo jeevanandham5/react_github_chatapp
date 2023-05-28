@@ -3,11 +3,11 @@ import "./App.css";
 import { useState } from "react";
 import Chat from "./components/Chat";
 //https://deploy-vercel-flax-ten.vercel.app/
+
 const socket = io("https://deploy-vercel-flax-ten.vercel.app/", {
   withCredentials: true,
-  extraHeaders: {
-    "Access-Control-Allow-Origin": "https://jeevanandham5.github.io/",
-  },
+  transports: ["websocket"],
+  secure: true,
 });
 
 function App() {
